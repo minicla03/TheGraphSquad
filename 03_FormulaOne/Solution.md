@@ -276,3 +276,16 @@ WHERE elementId(r1) < elementId(r2)
 WITH length(p) AS length
 RETURN max(length) AS diameter
 ```
+
+## Challenge 18
+
+> [!NOTE] Assignment
+> For each race, find **the 3 drivers on the podium**.
+
+```cypher
+MATCH (r:Race)<-[p:PARTICIPATED]-(d:Driver)
+WHERE p.position <= 3
+WITH r.name AS race, d.name AS driver, p.position AS pos
+ORDER BY pos ASC
+RETURN race, collect([driver, pos])
+```
