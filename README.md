@@ -17,6 +17,7 @@ All the exercises are done using [neo4j](https://neo4j.com/) and the
     ├── 01_ShakespeareTheater    # Exercise 1
     ├── 02_AlpineSkiing          # Exercise 2
     ├── 03_FormulaOne            # Exercise 3
-    ├── 04_SocialFoodNetwork     # Exercise 4
+    ├── 04_SocialFoodNetwork     # Exercise 4 (modeling and querying)
+    ├── 05_Artists               # Exercise 5 (partial exam from last years)
     ├── LICENSE                  # License file
     └── README.md                # This file
